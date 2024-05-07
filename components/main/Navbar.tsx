@@ -1,11 +1,16 @@
 // components/main/Navbar.tsx
-
-
+"use client"
+import {useState} from 'react'
 import { Socials } from '@/constants'
 import Image from 'next/image'
 import React from 'react'
 
+import {FaBars, FaTimes} from 'react-icons/fa'   // For the hamburger menu
+
+
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);  // State to handle menu toggle
+
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10"
     >
@@ -26,14 +31,20 @@ const Navbar = () => {
              </span>
         </a>
 
-        <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
-            <div className="flex items-center justify-between w-full h-auto border border-[#70042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full 
-            text-gray-200">
-                <a href="#about-me" className="cursor-pointer"> About me</a>
-                <a href="#skills" className="cursor-pointer"> Skills</a>
-                <a href="#projects" className="cursor-pointer"> Projects</a>
-            </div>
+        {/* Hamburger menu for smaller screens */}
+        <div className="md:hidden">
+          <button onClick={() => setIsOpen(!isOpen)} className="text-gray-200 text-2xl">
+            {isOpen ? <FaTimes /> : <FaBars />}
+          </button>
+        </div>
 
+      {/* Navigation links - shown on all screens, but adjusted for small screens */}
+      <div className={`md:flex items-center justify-between w-full h-auto ${isOpen ? 'flex' : 'hidden'} absolute md:relative top-[65px] md:top-0 left-0 md:left-auto w-full md:w-[500px] bg-[#03001417] md:bg-transparent backdrop-blur-md md:backdrop-blur-none flex-col md:flex-row py-5 md:py-0 transition-all duration-300 ease-in-out`}>
+          <div className="flex items-center justify-between w-full h-auto border border-[#70042f861] bg-[#0300145e] md:mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
+            <a href="#about-me" className="block py-2 px-4 text-white cursor-pointer">About me</a>
+            <a href="#skills" className="block py-2 px-4 text-white cursor-pointer">Skills</a>
+            <a href="#projects" className="block py-2 px-4 text-white cursor-pointer">Projects</a>
+          </div>
         </div>
 
         <div className="flex flex-row gap-5">
