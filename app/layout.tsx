@@ -1,6 +1,9 @@
+
+// app/layout.tsx
+
 import Footer from "@/components/main/Footer";
 import Navbar from "@/components/main/Navbar";
-import StarsCanvas from "@/components/main/StarBackgoung";
+import StarsCanvas from "@/components/main/StarBackground";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";

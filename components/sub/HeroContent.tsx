@@ -1,3 +1,5 @@
+// components/sub//HeroContent.tsx
+
 "use client";
 
 import React from 'react'

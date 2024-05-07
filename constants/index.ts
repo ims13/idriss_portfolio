@@ -1,3 +1,5 @@
+// constant/index.ts
+
 export const Skill_data = [
     {
       skill_name: "Html 5",
@@ -80,23 +82,28 @@ export const Skill_data = [
   
   ];
   
+  // Socials
   export const Socials = [
     {
+      name: "LinkedIn",
+      src: "/LinkedIN1.svg",
+      url: "https://www.linkedin.com/in/idriss-l-a0361a205/"
+    },
+    {
+      name: "GitHub",
+      src: "/gitwhite1.svg",
+      url: "https://github.com/ims13"
+    },
+    {
       name: "Discord",
-      src: "/instagram.svg",
-    },
-    {
-      name: "Facebook",
-      src: "/facebook.svg",
-    },
-    {
-      name: "Instagram",
       src: "/discord.svg",
+      url: "https://discordapp.com/users/807277768697970730"
     },
   ];
   
   
   
+
   export const Frontend_skill = [
     {
       skill_name: "Html 5",

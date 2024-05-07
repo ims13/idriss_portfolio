@@ -1,14 +1,20 @@
+// components/main/Navbar.tsx
+
+
 import { Socials } from '@/constants'
 import Image from 'next/image'
 import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className="w-full h-[65px] fixed top-0 sgadow-lg shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
+    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10"
+    >
       <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
-        <a href="#about-me" className="h-auto flex flex-row items-center">
+        <a href="#about-me" 
+          className="h-auto flex flex-row items-center"
+          >
             <Image
-             src="/NavLogo.png"
+             src="/IdissNav.png"
              alt="logo"
              width={70}
              height={70}
@@ -32,13 +38,16 @@ const Navbar = () => {
 
         <div className="flex flex-row gap-5">
             {Socials.map((social) => (
-                <Image
-                    src={social.src}
-                    alt={social.name}
-                    key={social.name}
-                    height={24}
-                    width={24}
-                />
+              <a href={social.url} key={social.name} target="_blank" rel="noopener noreferrer">
+              <Image
+                  src={social.src}
+                  alt={social.name}
+                  key={social.name}
+                  height={24}
+                  width={24}
+                  className="cursor-pointer"
+              />
+              </a>
             ))}
 
         </div>

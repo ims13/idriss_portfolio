@@ -1,3 +1,5 @@
+// components/main/Encryption.tsx
+
 "use client";
 
 import React from 'react'
@@ -11,20 +13,17 @@ const Encryption = () => {
         <div className="absolute w-auto h-auto top-0 z-[5]">
             <motion.div
             variants={slideInFromTop}
-            className="text-[40px] font-meduim text-center text-gray-200"
+            className="text-[40px] font-medium text-center text-gray-200"
             >
                 Performance
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"> 
-                {" "}
-                &{" "}
-                </span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"> & </span>
                 Security
               
             </motion.div>
 
         </div>
 
-        <div className="flex flex-col items0center justify-ceneter translate-y-[-50px] absolute z-[20] w-auto h-auto">
+        <div className="flex flex-col items-center justify-ceneter translate-y-[-50px] absolute z-[20] w-auto h-auto">
           <div className="flex flex-col items-center group cursor-pointer w-auto h-auto">
             <Image
             src="/LockTop.png"
@@ -44,13 +43,11 @@ const Encryption = () => {
 
           </div>
 
-            <div className="Welcome-box px-[15px] py=[4px] z-[20] border my-[20px] bordeer-[#7042f88b]nopacity-[0.9]">
+            <div className="Welcome-box px-[15px] py-[4px] z-[20] border my-[20px] border-[#7042f88b] opacity-[0.9]]">
               <h1 className="Welcome-text text-[12px]">
                 Encryption
               </h1>
             </div>
-
-           
 
         </div>
 
@@ -69,6 +66,7 @@ const Encryption = () => {
             preload="false"
             className="w-full h-auto"
             src="/encryption.webm/"
+            
             />
         </div>
       

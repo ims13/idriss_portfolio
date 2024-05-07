@@ -1,3 +1,5 @@
+// components/sub/SkillText.tsx
+
 "use client"
 
 import { slideInFromRight, slideInFromTop } from '@/utils/motion'

@@ -1,3 +1,5 @@
+// components/main/StarBackground.tsx
+
 "use client"
 
 import React, {useState, useRef, Suspense} from 'react'
@@ -11,7 +13,7 @@ const StarBackground = (props: any) => {
     const ref: any = useRef();
     const [sphere] = useState(() =>
         random.inSphere(new Float32Array(5000), {
-        raduis: 1.2
+        radius: 1.2
     })
 );
 
@@ -31,10 +33,10 @@ useFrame((state, delta)=> {
         >
             <PointMaterial 
                 transparent
-                color = "$fff"
+                color = "#fff"
                 size={0.002}
                 sizeAttenuation = {true}
-                dethWrite= {false}
+                depthWrite={false}
             />
         </Points>
     </group>
@@ -43,7 +45,7 @@ useFrame((state, delta)=> {
 };
 
 const StarsCanvas = () => (
-    <div className="w-full h-auto fixed inset-0 z-[20]">
+    <div className="w-full h-full fixed inset-0 z-[10] stars-canvas">
         <Canvas camera={{position: [0, 0, 1]}}>
         <Suspense fallback={null}>
             <StarBackground />

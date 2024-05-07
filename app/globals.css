@@ -1,3 +1,5 @@
+/* app/global.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -66,3 +68,16 @@
 html {
     scroll-behavior: smooth;
   }
+
+/* Add this in your global.css or component-specific CSS file */
+.hover-scale:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+/*  the canvas to allow click events to pass through to elements below it. */
+.stars-canvas {
+  pointer-events: none;  /* Allows click events to pass through */
+}
+
+
+
