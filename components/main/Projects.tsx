@@ -11,25 +11,37 @@ const Projects = () => {
         <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
             My Projects
         </h1>
-        <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
-            <ProjectCard
-            src="/NextWebsite.png"
-            title="Modern Next.js Portfolio"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            />
-            <ProjectCard
-            src="/CardImage.png"
-            title="Interactive Website Cards"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            />
-            <ProjectCard
-            src="/SpaceWebsite.png"
-            title="Space Themed Website"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        
+
+        <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10 pt-5">
+          <ProjectCard 
+            src="/meseum.png"
+            title="Space Themed Website Inspired by the Metropolitan Museum"
+            description="This website draws inspiration from the vast and eclectic art collections of the Metropolitan Museum of Art, 
+            one of the largest and most revered art museums globally. Our design echoes the Met's dedication 
+            to cultural richness, featuring elements that are reminiscent of the museum's grandeur and diversity."
+            techStack="Next.js, React, Bootstrap, SWR, Jotai"
             />
 
+        <ProjectCard 
+          src="/rentUs.png"
+          title="Rent With Us - Simplifying Toronto's Housing Search"
+          description="Developed for the Seneca Hackathon 2024, 'Rent With Us' is a pioneering solution to Toronto's pressing housing needs. 
+          This platform empowers room seekers and house renters to find their ideal accommodations with ease, 
+          leveraging advanced AI for intelligent search functionalities."
+          techStack="Figma, Relume, AI-powered search"
+        />
+
+        <ProjectCard
+          src="/card_met.png"
+          title="Artistic Exploration: Themed Website Inspired by The Met"
+          description="Inspired by the eclectic art collections of the Metropolitan Museum of Art, this website combines the historical 
+          grandeur of classical art with modern digital aesthetics. Each design element reflects a fusion of ancient artistry and contemporary 
+          technology, creating a user experience that is both educational and visually captivating. "
+          techStack="Next.js, React, Bootstrap, SWR, Jotai"
+        />
         </div>
-      
+
     </div>
   )
 }
