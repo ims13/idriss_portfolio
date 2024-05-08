@@ -9,7 +9,7 @@ interface Props {
     description: string;
     techStack: string
 }
-
+  
 const ProjectCard = ({ src, title, description, techStack } : Props) => {
   return (
     // Set a fixed height and use flex to manage internal spacing
@@ -22,7 +22,7 @@ const ProjectCard = ({ src, title, description, techStack } : Props) => {
          className="w-full object-contain"
         />
 
-        <div className="flex-grow p-4 flex flex-col justify-between">  // Use flex-grow to fill available space
+        <div className="flex-grow p-4 flex flex-col justify-between"> {/* // Use flex-grow to fill available space */} 
            <h1 className="text-2xl font-semibold text-white">{title}</h1>
            <p className="mt-2 text-gray-300">{description}</p> 
            <p className="mt-2 text-gray-300">{techStack}</p> 
