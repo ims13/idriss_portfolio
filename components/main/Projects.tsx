@@ -40,6 +40,7 @@ const Projects = () => {
           technology, creating a user experience that is both educational and visually captivating. "
           techStack="Next.js, React, Bootstrap, SWR, Jotai"
         />
+        
         </div>
 
     </div>
