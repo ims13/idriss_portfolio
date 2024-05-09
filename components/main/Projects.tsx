@@ -13,7 +13,7 @@ const Projects = () => {
         </h1>
         
 
-        <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10 pt-5">
+        <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10 pt-5 cursor-pointer">
           <ProjectCard 
             src="/meseum.png"
             title="Space Themed Website Inspired by the Metropolitan Museum"
@@ -21,6 +21,7 @@ const Projects = () => {
             one of the largest and most revered art museums globally. Our design echoes the Met's dedication 
             to cultural richness, featuring elements that are reminiscent of the museum's grandeur and diversity."
             techStack="Next.js, React, Bootstrap, SWR, Jotai"
+            link=" "  // Link to the deployed project or detail page
             />
 
         <ProjectCard 
@@ -30,6 +31,7 @@ const Projects = () => {
           This platform empowers room seekers and house renters to find their ideal accommodations with ease, 
           leveraging advanced AI for intelligent search functionalities."
           techStack="Figma, Relume, AI-powered search"
+          link="https://www.figma.com/file/EHxnnjuuUADVWTtI9QHgMp/Relume-(Community)?type=design&node-id=97%3A2334&mode=design&t=oS7HpNsb2bmt3fAl-1"  // Link to the deployed project or detail page
         />
 
         <ProjectCard
@@ -39,8 +41,9 @@ const Projects = () => {
           grandeur of classical art with modern digital aesthetics. Each design element reflects a fusion of ancient artistry and contemporary 
           technology, creating a user experience that is both educational and visually captivating. "
           techStack="Next.js, React, Bootstrap, SWR, Jotai"
+          link=" "  // Link to the deployed project or detail page
         />
-        
+
         </div>
 
     </div>

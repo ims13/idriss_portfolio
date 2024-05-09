@@ -9,6 +9,7 @@ import { slideInFromLeft, slideInFromRight, slideInFromTop } from '@/utils/motio
 
 import { SparklesIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
+import SocialIcons from './SocialIcons';
 
 const HeroContent = () => {
   const [showMore, setShowMore] = useState(false); // State to toggle extra content
@@ -25,6 +26,11 @@ const HeroContent = () => {
       className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
     >
         <div className='h-full w-full flex flex-col gap-5 justify-center m-auto text-start'>
+          {/* Place SocialIcons component at the top of the HeroContent 
+          // This will now only show on small screens due to the 'md:hidden' class
+          */}
+          <SocialIcons />  
+
             <motion.div
               variants ={slideInFromTop}
               className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"

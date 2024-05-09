@@ -7,12 +7,15 @@ interface Props {
     src: string;
     title: string;
     description: string;
-    techStack: string
+    techStack: string;
+    link: string;  // Add link prop for navigation
 }
   
-const ProjectCard = ({ src, title, description, techStack } : Props) => {
+const ProjectCard = ({ src, title, description, techStack, link } : Props) => {
   return (
-    // Set a fixed height and use flex to manage internal spacing
+    <a href={link} target="_blank" rel="noopener noreferrer" className="w-full"> {/* Wrap the card content in an anchor tag */}
+
+    {/* // Set a fixed height and use flex to manage internal spacing */}
     <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] z-[30] flex flex-col w-[350px] md:w-[400px] xl:w-[450px] h-[600px]">
         <Image 
          src={src}
@@ -29,6 +32,7 @@ const ProjectCard = ({ src, title, description, techStack } : Props) => {
         </div>
       
     </div>
+    </a>
   )
 }
 
