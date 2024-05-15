@@ -12,7 +12,7 @@ const SocialIcons = () => {
                key={social.name} 
                target="_blank" 
                rel="noopener noreferrer" 
-               className="py-2 px-4 text-white cursor-pointer"
+               className="py-6 px-6 pt-48 text-white cursor-pointer"
                >
               <Image
                 src={social.src}
