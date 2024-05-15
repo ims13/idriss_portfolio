@@ -21,8 +21,7 @@ const Skills = () => {
                     src={image.Image}
                     width={image.width}
                     height={image.height}
-                    index={index}
-                
+                    index={index}   
                 />
 
             ))}
