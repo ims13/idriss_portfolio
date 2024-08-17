@@ -11,18 +11,55 @@ const Projects = () => {
         <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
             My Projects
         </h1>
+        {/** grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-10 pt-5 cursor-pointer */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-10 pt-5 cursor-pointer">
         
+        <ProjectCard 
+          src="/homeservice.png"
+          title="HomeServices Hub - Service Seeker Platform"
+          description="This platform empowers users to effortlessly find and book a wide range of home services. 
+          With robust search filters and a user-friendly interface, service seekers can browse through service providers, 
+          view detailed profiles, and make bookings seamlessly."
+          techStack="Next.js, React, Tailwind CSS, MongoDB, Firebase, Google Places"
+          link="https://homeservices-hub.vercel.app/"  // Link to the deployed project or detail page
+        />
 
-        <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10 pt-5 cursor-pointer">
-          <ProjectCard 
-            src="/meseum.png"
-            title="Space Themed Website Inspired by the Metropolitan Museum"
-            description="This website draws inspiration from the vast and eclectic art collections of the Metropolitan Museum of Art, 
-            one of the largest and most revered art museums globally. Our design echoes the Met's dedication 
-            to cultural richness, featuring elements that are reminiscent of the museum's grandeur and diversity."
-            techStack="Next.js, React, Bootstrap, SWR, Jotai"
-            link=" "  // Link to the deployed project or detail page
-            />
+        <ProjectCard 
+          src="/home_sp.png"
+          title="HomeServices Hub - Service Provider Platform"
+          description="The Service Provider Platform enables service professionals to manage their offerings, communicate with clients, 
+          and track bookings. Providers can easily create and update their profiles, list services, and monitor transactions in real-time."
+          techStack="Next.js, React, Tailwind CSS, MongoDB, Firebase, Google Places"
+          link="https://homeservices-hub-sp.vercel.app"  // Link to the deployed project or detail page
+        />
+
+        <ProjectCard 
+          src="/chat_with_pdf.png"
+          title="Chat with PDF Challenge in 5 days"
+          description="Developed a web application allowing users to interact with PDF documents using AI-driven chat functionalities. 
+          Integrated Stripe for subscription management and Firebase for data storage, featuring user authentication, 
+          subscription management, and responsive design."
+          techStack="Next.js, Firebase, Stripe, Clerk, Tailwind CSS, DaisyUI, OpenAI GPT-3.5, Langchain, Pinecone"
+          link="https://chat-with-pdf-challenge-rose.vercel.app"  // Link to the deployed project or detail page
+        />
+
+        <ProjectCard 
+          src="/robotic_1.png"
+          title="Basic Autonomous Navigation Challenge – Part 1"
+          description="Launched a sample application to create a map for an autonomous robot using ROS. 
+          Created and saved a map of the world in the ROS platform for autonomous navigation."
+          techStack="ROS, TurtleBot3, Gazebo, RViz"
+          link="https://www.youtube.com/watch?v=8g4wmFvoogA"  // Link to the video demonstration or detail page
+        />
+
+        <ProjectCard 
+          src="/robotic_2.png"
+          title="Basic Autonomous Navigation Challenge – Part 2"
+          description="Developed autonomous navigation capabilities using the pre-created map. 
+          Configured the robot to autonomously navigate within its designated environment."
+          techStack="ROS, TurtleBot3, Gazebo, RViz"
+          link="https://www.youtube.com/watch?v=c9jFwpLQ088"  // Link to the video demonstration or detail page
+        />
 
         <ProjectCard 
           src="/rentUs.png"
@@ -39,7 +76,7 @@ const Projects = () => {
           title="Artistic Exploration: Themed Website Inspired by The Met"
           description="Inspired by the eclectic art collections of the Metropolitan Museum of Art, this website combines the historical 
           grandeur of classical art with modern digital aesthetics. Each design element reflects a fusion of ancient artistry and contemporary 
-          technology, creating a user experience that is both educational and visually captivating. "
+          technology, creating a user experience that is both educational and visually captivating."
           techStack="Next.js, React, Bootstrap, SWR, Jotai"
           link=" "  // Link to the deployed project or detail page
         />
