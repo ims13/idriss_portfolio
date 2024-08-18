@@ -222,20 +222,20 @@ export const Skill_data = [
     {
       skill_name: "React Native",
       Image: "/ReactNative .png",
-      width: 70,
-      height: 70,
+      width: 50,
+      height: 50,
     },
     {
       skill_name: "Tauri",
       Image: "/tauri.svg",
-      width: 70,
-      height: 70,
+      width: 30,
+      height: 30,
     },
     {
       skill_name: "Docker",
       Image: "/docker.webp",
-      width: 70,
-      height: 70,
+      width: 50,
+      height: 50,
     },
   
     {

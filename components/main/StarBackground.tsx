@@ -9,37 +9,31 @@ import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
 
 const validatePositions = (positions: Float32Array) => {
-    let hasNaN = false;
-  
-    for (let i = 0; i < positions.length; i++) {
-      if (isNaN(positions[i])) {
-        console.error(`Invalid position at index ${i}:`, positions[i]);
-        hasNaN = true;
-      }
+  let hasInvalid = false;
+
+  for (let i = 0; i < positions.length; i++) {
+    if (isNaN(positions[i]) || !isFinite(positions[i]) || positions[i] === null) {
+      console.error(`Invalid position at index ${i}:`, positions[i]);
+      hasInvalid = true;
+      positions[i] = 0; // Reset invalid value to 0
     }
-  
-    if (hasNaN) {
-      console.error("Positions array contains invalid data:", positions);
-    }
-  
-    return !hasNaN;
-  };
-  
-  const StarBackground = (props: any) => {
-    const ref: any = useRef();
-  
-    const [sphere] = useState(() => {
-      const positions = random.inSphere(new Float32Array(5000), { radius: 1.2 });
-  
-      // Validate positions before using them
-      if (!validatePositions(positions)) {
-        console.error("Generated positions contain invalid values.");
-        return new Float32Array(); // Return an empty array to prevent errors
-      }
-  
-      return positions;
-    });
-  
+  }
+
+  if (hasInvalid) {
+    console.error("Positions array contains invalid data:", positions);
+  }
+
+  return positions;
+};
+
+const StarBackground = (props: any) => {
+  const ref: any = useRef();
+
+  const [sphere] = useState(() => {
+    const positions = random.inSphere(new Float32Array(2000), { radius: 1.2 });
+    return validatePositions(positions);
+  });
+
   useFrame((state, delta) => {
     if (ref.current) {
       ref.current.rotation.x -= delta / 10;
@@ -49,13 +43,7 @@ const validatePositions = (positions: Float32Array) => {
 
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
-      <Points
-        ref={ref}
-        positions={sphere}
-        stride={3}
-        frustumCulled
-        {...props}
-      >
+      <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
         <PointMaterial
           transparent
           color="#fff"
