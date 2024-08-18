@@ -7,7 +7,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 // @ts-ignore
 import * as random from "maath/random/dist/maath-random.esm";
-import { isMobileDevice } from "@/utils/detectMobile"; // Import the utility function
+import { isMobileDevice } from "../../utils/detectMobile"; // Import the utility function
 
 const validatePositions = (positions: Float32Array) => {
   let hasInvalid = false;
