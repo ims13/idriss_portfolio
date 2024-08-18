@@ -19,7 +19,7 @@ const Hero = () => {
         className='rotate-180 absolute top-[-340px] left-0  z-[1] hidden sm:hidden md:block  w-full h-full object-cover'
         >
             <source 
-            //src='/blackhole.webm' 
+            src='/blackhole.webm' 
             type='video/webm'/>
 
         </video>

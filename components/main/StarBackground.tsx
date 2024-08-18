@@ -7,6 +7,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 // @ts-ignore
 import * as random from "maath/random/dist/maath-random.esm";
+import { isMobileDevice } from "@/utils/detectMobile"; // Import the utility function
 
 const validatePositions = (positions: Float32Array) => {
   let hasInvalid = false;
@@ -26,8 +27,8 @@ const validatePositions = (positions: Float32Array) => {
   return positions;
 };
 
-const StarBackground = (props: any) => {
-  const ref: any = useRef();
+const StarBackground: React.FC = (props) => {
+  const ref = useRef<any>();
 
   const [sphere] = useState(() => {
     const positions = random.inSphere(new Float32Array(2000), { radius: 1.2 });
@@ -56,14 +57,19 @@ const StarBackground = (props: any) => {
   );
 };
 
-const StarsCanvas = () => (
-  <div className="w-full h-full fixed inset-0 z-[10] stars-canvas">
-    <Canvas camera={{ position: [0, 0, 1] }}>
-      <Suspense fallback={null}>
-        <StarBackground />
-      </Suspense>
-    </Canvas>
-  </div>
-);
+const StarsCanvas: React.FC = () => {
+  if (isMobileDevice()) {
+    return null;
+  }
+  return (
+    <div className="w-full h-full fixed inset-0 z-[10] stars-canvas">
+      <Canvas camera={{ position: [0, 0, 1] }}>
+        <Suspense fallback={null}>
+          <StarBackground />
+        </Suspense>
+      </Canvas>
+    </div>
+  );
+};
 
 export default StarsCanvas;
