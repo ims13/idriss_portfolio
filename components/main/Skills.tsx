@@ -91,14 +91,17 @@ const Skills = () => {
         <div className="w-full h-full absolute">
             <div className="w-full h-full z-[-10] opacity-30 absolute flex items-center justify-center bg-cover">
                 <video
-                className="w-full h-auto"
-                preload="false"
-                playsInline
-                loop
-                muted
-                autoPlay
-                src="/cards-video.webm"
-                />
+                    className="w-full h-auto"
+                    preload="false"
+                    playsInline
+                    loop
+                    muted
+                    autoPlay
+                    >
+                      <source src='/cards-video.webm' type='video/webm' />
+                      <source src='/cards-video.mp4' type='video/mp4' /> {/* Fallback for devices that don't support webm  Your browser does not support the video tag.*/}
+                     
+                </video>
 
             </div>
 

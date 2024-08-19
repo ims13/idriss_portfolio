@@ -19,8 +19,15 @@ const Hero = () => {
         className='rotate-180 absolute top-[-340px] left-0  z-[1] hidden sm:hidden md:block  w-full h-full object-cover'
         >
             <source 
-            src='/blackhole.webm' 
-            type='video/webm'/>
+              src='/blackhole.webm' 
+              type='video/webm'
+            />
+            
+            <source 
+              src='/blackhole.mp4' //blackhole.mp4
+              type='video/mp4' 
+            /> {/* Fallback for devices that don't support webm  Your browser does not support the video tag.*/}
+         
 
         </video>
        
