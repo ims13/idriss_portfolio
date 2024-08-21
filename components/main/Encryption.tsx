@@ -66,7 +66,7 @@ const Encryption = () => {
               preload="false"
               className="w-full h-auto"
             >
-              <source src="/encryption.webm" type="video/webm" />
+              {/* <source src="/encryption.webm" type="video/webm" /> */}
               <source src="/encryption.mp4" type="video/mp4" /> {/* Fallback for devices that don't support webm  Your browser does not support the video tag. */}
              
             </video>

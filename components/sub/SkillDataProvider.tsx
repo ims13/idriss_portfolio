@@ -56,8 +56,10 @@ const SkillDataProvider = ({ src, width, height, index }: Props) => {
                 alt={altText}
                 loading="lazy"
                 style={{
-                    maxWidth: '80px',  // Set a maximum width for the images
-                    maxHeight: '80px', // Set a maximum height for the images
+                    width: 'auto',        // Maintain the aspect ratio
+                    height: 'auto',       // Maintain the aspect ratio
+                    maxWidth: `${width}px`,  // Set a maximum width based on the passed prop
+                    maxHeight: `${height}px`, // Set a maximum height based on the passed prop
                     objectFit: 'contain', // Ensure images fit within the defined size without distortion
                 }}
             />
