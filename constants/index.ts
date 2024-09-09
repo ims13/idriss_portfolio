@@ -222,27 +222,27 @@ export const Skill_data = [
     {
       skill_name: "React Native",
       Image: "/ReactNative .png",
-      width: 50,
-      height: 50,
+      width: 60,
+      height: 60,
     },
-    {
-      skill_name: "Tauri",
-      Image: "/tauri.svg",
-      width: 30,
-      height: 30,
-    },
+    // {
+    //   skill_name: "Tauri",
+    //   Image: "/tauri.svg",
+    //   width: 30,
+    //   height: 30,
+    // },
     {
       skill_name: "Docker",
       Image: "/docker.webp",
-      width: 50,
-      height: 50,
+      width: 60,
+      height: 60,
     },
   
     {
       skill_name: "Figma",
       Image: "/figma.png",
-      width: 50,
-      height: 50,
+      width: 60,
+      height: 60,
     },
   
   ];
@@ -250,11 +250,23 @@ export const Skill_data = [
   
   export const Other_skill = [
     {
-      skill_name: "Go",
-      Image: "/go.png",
+      skill_name: "C++",
+      Image: "/c++.png",
       width: 60,
       height: 60,
     },
+    {
+      skill_name: "C",
+      Image: "/C_Logo.png",
+      width: 60,
+      height: 60,
+    },
+    // {
+    //   skill_name: "Go",
+    //   Image: "/go.png",
+    //   width: 60,
+    //   height: 60,
+    // },
   ];
   
   

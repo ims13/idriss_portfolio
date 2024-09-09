@@ -32,6 +32,17 @@ const Projects = () => {
           techStack="Next.js, React, Tailwind CSS, MongoDB, Firebase, Google Places"
           link="https://homeservices-hub-sp.vercel.app"  // Link to the deployed project or detail page
         />
+        
+        <ProjectCard 
+          src="/walmart_images/walmart_cart.png"
+          title="Walmart Cloned Website"
+          description="A high-performance, fully responsive clone of the Walmart website. This project focuses on modern web development practices 
+          and features asynchronous data loading, an image carousel, and dynamic cart management. Leveraging real-time data scrapped from Walmart's API 
+          using Oxylabs, it provides seamless e-commerce functionality, including advanced routing with parallel and intercept routes."
+          techStack="Next.js, React, Tailwind CSS, Zustand, Oxylabs API, ChadCN UI, Parallel and Intercept Routes, Vercel"
+          link="https://walmart-clone-sandy.vercel.app"  // Link to the deployed project or detail page
+        />
+
 
         <ProjectCard 
           src="/chat_with_pdf.png"
