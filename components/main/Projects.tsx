@@ -14,6 +14,20 @@ const Projects = () => {
         {/** grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-10 pt-5 cursor-pointer */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-10 pt-5 cursor-pointer">
         
+        {/* New E-commerce Project Card */}
+        <ProjectCard 
+          src="/insta-shop.png"  // Add your project screenshot
+          title="Instagram-Style E-commerce Platform"
+          description="A modern e-commerce platform with Instagram-like features, combining social 
+          media aesthetics with robust shopping functionality. Features include real-time content 
+          preview with Sanity Studio, seamless payment processing with Stripe, and secure user 
+          authentication via Clerk. The platform offers a dynamic shopping cart system, live 
+          product updates, and an intuitive search function."
+          techStack="Next.js 14, TypeScript, Tailwind CSS, Sanity.io, Stripe, Clerk Auth, 
+          Zustand, ShadcnUI, Server Actions"
+          link="https://instantshop-eight.vercel.app" // Link to the deployed project or detail page
+        />
+        
         <ProjectCard 
           src="/homeservice.png"
           title="HomeServices Hub - Service Seeker Platform"
