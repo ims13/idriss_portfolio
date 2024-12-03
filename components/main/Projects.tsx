@@ -27,6 +27,19 @@ const Projects = () => {
           Zustand, ShadcnUI, Server Actions"
           link="https://instantshop-eight.vercel.app" // Link to the deployed project or detail page
         />
+        {/* New E-commerce Project Card */}
+        <ProjectCard 
+          src="/insta_shop_mern.png"  // Update with your MERN project screenshot
+          title="Insta_Shop - Full Stack E-commerce Platform"
+          description="A feature-rich e-commerce platform built with the MERN stack, combining modern design with robust functionality. 
+          Features include user authentication, product management with categories and brands, shopping cart functionality, PayPal payment integration, and a dynamic image carousel system. 
+          The platform offers comprehensive order management, address handling, and an admin dashboard for 
+          content management. 
+          Implements responsive design principles and real-time updates using Redux for state management."
+          techStack="MongoDB, Express.js, React, Node.js, Redux Toolkit, Tailwind CSS, Shadcn UI, PayPal API, Cloudinary, 
+          JWT Authentication"
+          link="https://github.com/yourusername/your-repo"  // Update with your actual repository link
+      />
         
         <ProjectCard 
           src="/homeservice.png"
