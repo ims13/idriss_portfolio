@@ -38,7 +38,7 @@ const Projects = () => {
           Implements responsive design principles and real-time updates using Redux for state management."
           techStack="MongoDB, Express.js, React, Node.js, Redux Toolkit, Tailwind CSS, Shadcn UI, PayPal API, Cloudinary, 
           JWT Authentication"
-          link="https://github.com/yourusername/your-repo"  // Update with your actual repository link
+          link="https://e-commerce-instashop-3.onrender.com"  // Update with your actual repository link
       />
         
         <ProjectCard 
