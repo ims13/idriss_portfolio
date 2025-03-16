@@ -14,6 +14,18 @@ const Projects = () => {
         {/** grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-10 pt-5 cursor-pointer */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-10 pt-5 cursor-pointer">
         
+        {/* Doctor Dave Tech Solutions Project */}
+        <ProjectCard 
+          src="/doctor-dave-tech.png"  // You'll need to add a screenshot image
+          title="Doctor Dave Tech Solutions"
+          description="Developed a comprehensive IT services platform for computer repair business. Features include an intuitive scheduling system, 
+          contact management with email notifications, newsletter subscription with automated responses, coupon generation system, and a dynamic blog system with Sanity CMS. 
+          The platform showcases responsive design with dark/light mode support, and integrates location-based services for local customers."
+          techStack="Next.js 15, TypeScript, Tailwind CSS, Sanity.io, Resend (Email API), ShadcnUI, Framer Motion, Leaflet Maps, 
+          React Server Components, Server Actions"
+          link="https://doctor-dave.vercel.app" // Your deployment URL
+        />
+        
         {/* New E-commerce Project Card */}
         <ProjectCard 
           src="/insta-shop.png"  // Add your project screenshot
