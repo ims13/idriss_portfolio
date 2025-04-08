@@ -14,6 +14,19 @@ const Projects = () => {
         {/** grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-10 pt-5 cursor-pointer */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-10 pt-5 cursor-pointer">
         
+        {/* VidSparkAI Project Card */}
+        <ProjectCard 
+          src="/vidspark-ai.png"  // You'll need to add a screenshot image
+          title="VidSparkAI - AI-Powered Video Analysis Platform"
+          description="An advanced SaaS platform that uses AI to analyze YouTube videos and generate insights, transcriptions, titles, and thumbnails. 
+          Features include Claude 3.7 powered AI chat agent, usage tracking and subscription management, YouTube video metadata processing, 
+          automatic transcription with caching, thumbnail generation, and title creation using AI. 
+          Implemented with a responsive design, feature flag system, and comprehensive usage analytics."
+          techStack="Next.js 15, React 19, TypeScript, Tailwind CSS, Convex DB, Clerk Auth, Schematic Feature Flags, 
+          Anthropic Claude 3.7, AI SDK, YouTubeI.js, Framer Motion, ShadcnUI"
+          link="https://vidsparkai.vercel.app"  // Update with your actual deployment URL
+        />
+        
         {/* Doctor Dave Tech Solutions Project */}
         <ProjectCard 
           src="/doctor-dave-tech.png"  // You'll need to add a screenshot image
