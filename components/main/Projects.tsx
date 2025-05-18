@@ -52,6 +52,15 @@ const Projects = () => {
           Zustand, ShadcnUI, Server Actions"
           link="https://instantshop-eight.vercel.app" // Link to the deployed project or detail page
         />
+        {/* Luxury Royal Painter Project Card */}
+        <ProjectCard 
+          src="/luxury_royal_painter.png"
+          title="Luxury Royal Painter - Premium Painting Services"
+          description="A sophisticated web platform for a high-end painting company featuring a responsive design with dark/light mode support. The site includes an interactive service selection system, multi-step booking process, dynamic FAQ section with search capabilities, service area mapping with Leaflet, and animated content sections using Framer Motion. The platform delivers a premium user experience with smooth transitions, accessibility features, and mobile-first design principles."
+          techStack="Next.js 15, React 19, TypeScript, Tailwind CSS 4, Framer Motion, Fuse.js, Leaflet Maps, Next-themes, Zod, Resend API"
+          link="https://sky-penter.vercel.app"  // Update with your actual deployment URL when available
+        />
+        
         {/* New E-commerce Project Card */}
         <ProjectCard 
           src="/insta_shop_mern.png"  // Update with your MERN pr ject screenshot
