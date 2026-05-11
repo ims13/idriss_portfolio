@@ -14,6 +14,18 @@ const Projects = () => {
         {/** grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-10 pt-5 cursor-pointer */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-10 pt-5 cursor-pointer">
         
+        {/* Seneca Coffee Shop Project */}
+        <ProjectCard 
+          src="/seneca-coffee.png"  // Add your screenshot to public/
+          title="Seneca Coffee Shop – Campus Ordering Platform"
+          description="Developed a production-ready full-stack coffee ordering platform designed for Seneca students and staff. 
+          The platform enables users to browse menu items, place pickup orders, track live order status updates, and manage carts seamlessly. 
+          Implemented a role-based staff dashboard for managing incoming orders with forward-only status transitions. 
+          Features include Clerk authentication, PostgreSQL database integration on Render, responsive UI/UX, animated landing pages, and CI/CD deployment workflows using GitHub Actions."
+          techStack="Next.js 15, React 19, TypeScript, Tailwind CSS, Django REST Framework, PostgreSQL, Render, Clerk Authentication, Sanity CMS, Shadcn UI, GitHub Actions, Vercel"
+          link="https://seneca-coffee-shop.vercel.app"
+        />
+        
         {/* VidSparkAI Project Card */}
         <ProjectCard 
           src="/vidspark-ai.png"  // You'll need to add a screenshot image
