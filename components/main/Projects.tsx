@@ -51,6 +51,17 @@ const Projects = () => {
           link="https://doctor-dave.vercel.app" // Your deployment URL
         />
         
+        {/* VeroSkin Project Card */}
+        <ProjectCard 
+          src="/veroskin.png"  // Add your screenshot to public/
+          title="VeroSkin – AI-Powered Beauty E-Commerce Platform"
+          description="A modern full-stack beauty e-commerce platform focused on personalized shopping experiences and scalable storefront architecture. 
+          Features include dynamic product browsing, advanced category filtering, intelligent search, secure authentication, persistent cart management, 
+          Stripe-powered checkout flows, webhook-based order processing, and real-time CMS content management with Sanity Studio. 
+          Developed a custom foundation configurator allowing users to explore personalized beauty product variations with responsive UI interactions and optimized performance."
+          techStack="Next.js 16, React 19, TypeScript, Tailwind CSS, Sanity.io, Clerk Auth, Stripe, Zustand, Shadcn UI, Server Actions, Vercel"
+          link="https://veroskin-shop.vercel.app"  // Update if deployment URL differs
+        />
         {/* New E-commerce Project Card */}
         <ProjectCard 
           src="/insta-shop.png"  // Add your project screenshot
