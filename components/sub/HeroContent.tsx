@@ -47,34 +47,38 @@ const HeroContent = () => {
             className="flex flex-col gap-6 mt-6 text-6xl text-bold text-white max-w-[600px] w-auto h-auto"
             >
               <span>
-                Provinding
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"> 
-                  {" "}
-                  the best 
-                  {" "}
+                Full Stack
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+                  {" "}Developer{" "}
                 </span>
-                Project experience
+                based in Toronto
               </span>
             </motion.div>
 
             <motion.p
-            
             variants={slideInFromLeft(0.8)}
             className="text-lg text-gray-400 my-5 max-w-[600px]"
             >
-              I&apos;m a Full Stack Software Engineer with exprience in website,
-              Mobile, and Software development. 
-              Check out my projects and skills.
-      
+              I build fast, production-ready web apps with Next.js, React, TypeScript,
+              and AI integrations. Check out my projects and skills below.
             </motion.p>
-
 
             <motion.div
               variants={slideInFromLeft(1)}
-              onClick={handleToggleMore}
-              className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+              className="flex flex-row gap-4 flex-wrap"
             >
-              Learn More!
+              <div
+                onClick={handleToggleMore}
+                className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] px-6"
+              >
+                Learn More
+              </div>
+              <a
+                href="mailto:ilufungula@myseneca.com"
+                className="py-2 px-6 text-center text-white cursor-pointer rounded-lg max-w-[200px] border border-purple-500/60 hover:border-purple-400 hover:bg-purple-500/10 transition-all duration-200"
+              >
+                Hire Me
+              </a>
             </motion.div>
 
             {showMore && (

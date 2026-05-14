@@ -38,8 +38,8 @@ const Footer = () => {
                 {/* Contact Section */}
                 <div className="min-w-[200px] flex flex-col items-center z-[30]">
                     <h3 className="font-bold text-lg">Contact</h3>
-                    <a href="tel:+13062270413" className="flex items-center my-4 cursor-pointer" aria-label="Call (306)-22-70413">
-                        <FaPhone aria-hidden="true" /><span className="ml-2">(306)-22-70413</span>
+                    <a href="tel:+14165550123" className="flex items-center my-4 cursor-pointer" aria-label="Call (306) 227-0413">
+                        <FaPhone aria-hidden="true" /><span className="ml-2">(306) 227-0413</span>
                     </a>
                     <a href="mailto:ilufungula@myseneca.com" className="flex items-center my-4 cursor-pointer" aria-label="Email ilufungula@myseneca.com">
                         <FaEnvelopeSquare aria-hidden="true" /><span className="ml-2">ilufungula@myseneca.com</span>

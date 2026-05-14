@@ -11,7 +11,19 @@ const Projects = () => {
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-10 pt-5 cursor-pointer">
 
-      
+        {/* Man With The Van – most recent, pinned first */}
+        <ProjectCard
+          src="/man-with-van.png"
+          title="Man With The Van – GTA Moving Company Website"
+          description="Built a complete, production-ready moving company website for the Greater Toronto Area from scratch.
+          Features a fully animated hero section with a GSAP-powered floating van illustration, scroll-triggered Framer Motion reveals across 9 home page sections,
+          an interactive quote/pricing page with 3 service tiers, a postal code coverage checker, testimonials carousel with rating breakdowns,
+          and a working contact form with success state.
+          Designed with a dark navy + burnt orange glassmorphism theme, Tailwind CSS v4 utility classes, and a fully responsive mobile-first layout.
+          Deployed on Vercel with Node 22 and Turbopack for sub-400ms dev startup."
+          techStack="Next.js 16, React 19, TypeScript, Tailwind CSS v4, Framer Motion, GSAP, Lucide React, Vercel, Turbopack"
+          link="https://man-with-van.vercel.app"
+        />
 
         {/* Seneca Coffee Shop */}
         <ProjectCard
@@ -69,20 +81,6 @@ const Projects = () => {
           The platform offers a dynamic shopping cart system, live product updates, and an intuitive search function."
           techStack="Next.js 14, TypeScript, Tailwind CSS, Sanity.io, Stripe, Clerk Auth, Zustand, ShadcnUI, Server Actions"
           link="https://instantshop-eight.vercel.app"
-        />
-        
-          {/* Man With The Van – most recent, pinned first */}
-        <ProjectCard
-          src="/man-with-van.png"
-          title="Man With The Van – GTA Moving Company Website"
-          description="Built a complete, production-ready moving company website for the Greater Toronto Area from scratch.
-          Features a fully animated hero section with a GSAP-powered floating van illustration, scroll-triggered Framer Motion reveals across 9 home page sections,
-          an interactive quote/pricing page with 3 service tiers, a postal code coverage checker, testimonials carousel with rating breakdowns,
-          and a working contact form with success state.
-          Designed with a dark navy + burnt orange glassmorphism theme, Tailwind CSS v4 utility classes, and a fully responsive mobile-first layout.
-          Deployed on Vercel with Node 22 and Turbopack for sub-400ms dev startup."
-          techStack="Next.js 16, React 19, TypeScript, Tailwind CSS v4, Framer Motion, GSAP, Lucide React, Vercel, Turbopack"
-          link="https://man-with-van.vercel.app"
         />
 
         {/* Luxury Royal Painter */}
@@ -192,7 +190,7 @@ const Projects = () => {
           grandeur of classical art with modern digital aesthetics. Each design element reflects a fusion of ancient artistry and contemporary
           technology, creating a user experience that is both educational and visually captivating."
           techStack="Next.js, React, Bootstrap, SWR, Jotai"
-          link=" "
+          link="https://github.com/ims13"
         />
 
       </div>
