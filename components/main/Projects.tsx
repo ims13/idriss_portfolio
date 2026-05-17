@@ -69,7 +69,7 @@ const Projects = () => {
           Stripe-powered checkout flows, webhook-based order processing, and real-time CMS content management with Sanity Studio.
           Developed a custom foundation configurator allowing users to explore personalized beauty product variations with responsive UI interactions and optimized performance."
           techStack="Next.js 16, React 19, TypeScript, Tailwind CSS, Sanity.io, Clerk Auth, Stripe, Zustand, Shadcn UI, Server Actions, Vercel"
-          link="https://veroskin-shop.vercel.app"
+          link="https://veroskin-ecommerce.vercel.app" 
         />
 
         {/* Instagram-Style E-commerce */}
