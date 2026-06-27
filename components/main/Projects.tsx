@@ -10,6 +10,15 @@ const Projects = () => {
         My Projects
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-10 pt-5 cursor-pointer">
+      
+      {/* Inforza Tech */}
+      <ProjectCard
+        src="/inforza-tech1.png"
+        title="Inforza Tech – Premium IT Services Website"
+        description="Redesigned and modernized a full production website for Inforza Tech, an Ontario-based IT services company serving the Greater Toronto Area. Built a premium dark/light responsive experience with a modern glassmorphism design system, animated hero sections, service pages, location pages, booking flows, contact forms, cookie consent management, and SEO-focused metadata. Added a scalable service catalog with dynamic routes, GTA service-area coverage map, location cards with live availability indicators, Resend-powered transactional emails, LocalBusiness schema, sitemap support, and polished mobile-first UX across the full site."
+        techStack="Next.js 14, React 18, TypeScript, Tailwind CSS, Framer Motion, Shadcn UI, Resend, next-themes, Zod, React Hook Form, LocalBusiness Schema, Vercel"
+        link="https://www.inforzatech.com"
+      />
 
         {/* Man With The Van – most recent, pinned first */}
         <ProjectCard
